@@ -34,8 +34,8 @@ export default function ShapeRemovalGame() {
   };
 
   return (
-    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif', backgroundColor: '#f5f5f5', minHeight: '100vh' }}>
-      <div style={{ maxWidth: '1200px', margin: '0 auto', width: '100%' }}>
+    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif', backgroundColor: '#f5f5f5', minHeight: '100vh', marginLeft: '60px', paddingRight: '60px' }}>
+     <div style={{ maxWidth: 'calc(100% - 60px)', margin: '0 0 0 60px', width: '100%' }}>
         <h1 style={{ textAlign: 'center', marginBottom: '10px' }}>Shape Removal Game</h1>
         <p style={{ textAlign: 'center', marginBottom: '20px', color: '#666' }}>Click on a shape to remove it</p>
         
@@ -59,7 +59,7 @@ export default function ShapeRemovalGame() {
 
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))',
+          gridTemplateColumns: 'repeat(5, 1fr)',
           gap: '20px',
           marginBottom: '30px'
         }}>
